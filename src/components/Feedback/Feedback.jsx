@@ -36,8 +36,7 @@ class Feedback extends Component {
   render() {
     const total = this.calcTotal();
     const goodPercent = this.calcPercent();
-    console.log(goodPercent);
-    console.log(total);
+
     return (
       <div className={css.feedback}>
         <Section title="Please leave feedback">
