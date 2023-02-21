@@ -1,4 +1,5 @@
 import css from './FeedbackActions.module.css';
+import PropTypes from 'prop-types';
 
 const FeedbackActions = ({ leaveFeedback, feedbackOptions }) => {
   return (
@@ -16,3 +17,8 @@ const FeedbackActions = ({ leaveFeedback, feedbackOptions }) => {
 };
 
 export default FeedbackActions;
+
+FeedbackActions.propTypes = {
+  leaveFeedback: PropTypes.func,
+  feedbackOptions: PropTypes.array,
+};

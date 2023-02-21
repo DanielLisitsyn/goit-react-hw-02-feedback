@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const FeedbackResult = ({ total, goodPercent, good, neutral, bad }) => {
   return (
     <div>
@@ -11,3 +13,11 @@ const FeedbackResult = ({ total, goodPercent, good, neutral, bad }) => {
 };
 
 export default FeedbackResult;
+
+FeedbackResult.propTypes = {
+  total: PropTypes.number,
+  goodPercent: PropTypes.number,
+  good: PropTypes.number,
+  neutral: PropTypes.number,
+  bad: PropTypes.number,
+};
